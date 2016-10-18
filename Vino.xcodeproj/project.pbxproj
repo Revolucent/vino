@@ -11,7 +11,23 @@
 		F36005051DB6558100FEFFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36005041DB6558100FEFFDF /* ViewController.swift */; };
 		F36005081DB6558100FEFFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36005061DB6558100FEFFDF /* Main.storyboard */; };
 		F360050A1DB6558100FEFFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36005091DB6558100FEFFDF /* Assets.xcassets */; };
+		F36005121DB6578E00FEFFDF /* CoreDataQueryInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36005111DB6578E00FEFFDF /* CoreDataQueryInterface.framework */; };
+		F36005131DB6578E00FEFFDF /* CoreDataQueryInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F36005111DB6578E00FEFFDF /* CoreDataQueryInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F36005141DB6578E00FEFFDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F36005131DB6578E00FEFFDF /* CoreDataQueryInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F36004FF1DB6558100FEFFDF /* Vino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +36,7 @@
 		F36005071DB6558100FEFFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F36005091DB6558100FEFFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F360050B1DB6558100FEFFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36005111DB6578E00FEFFDF /* CoreDataQueryInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDataQueryInterface.framework; path = Carthage/Build/tvOS/CoreDataQueryInterface.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36005121DB6578E00FEFFDF /* CoreDataQueryInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +54,7 @@
 		F36004F61DB6558100FEFFDF = {
 			isa = PBXGroup;
 			children = (
+				F36005111DB6578E00FEFFDF /* CoreDataQueryInterface.framework */,
 				F36005011DB6558100FEFFDF /* Vino */,
 				F36005001DB6558100FEFFDF /* Products */,
 			);
@@ -71,6 +90,7 @@
 				F36004FB1DB6558100FEFFDF /* Sources */,
 				F36004FC1DB6558100FEFFDF /* Frameworks */,
 				F36004FD1DB6558100FEFFDF /* Resources */,
+				F36005141DB6578E00FEFFDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +269,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = RWC7T4Z6DX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Vino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.Vino;
@@ -263,6 +287,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = RWC7T4Z6DX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Vino/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prosumma.Vino;

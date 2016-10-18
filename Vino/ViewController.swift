@@ -6,6 +6,8 @@
 //  Copyright © 2016 Gregory Higley. All rights reserved.
 //
 
+import CoreData
+import CoreDataQueryInterface
 import UIKit
 
 class ViewController: UIViewController {
